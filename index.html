@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CHANGE THESE -->
+    <title>Your Name | Economics | University of Notre Dame</title>
+
+    <meta name="description"
+          content="Academic website of Your Name, PhD candidate in Economics at the University of Notre Dame. Research in applied microeconomics, labor economics, public economics, and economics of education.">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+
+        /* ------------------------------
+           GENERAL
+        ------------------------------ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.55;
+        }
+
+        a {
+            color: #0077a3;
+        }
+
+        a:hover {
+            color: #d39a00;
+        }
+
+
+        /* ------------------------------
+           TOP NAVIGATION
+        ------------------------------ */
+
+        .navbar {
+            background-color: #000;
+            color: white;
+
+            min-height: 70px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0 28px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .brand img {
+            width: 58px;
+            height: auto;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: 300;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #d39a00;
+        }
+
+
+        /* ------------------------------
+           PAGE CONTENT
+        ------------------------------ */
+
+        .page {
+            max-width: 1320px;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: 520px 1fr;
+
+            gap: 45px;
+
+            padding: 30px 35px 60px 35px;
+        }
+
+
+        /* ------------------------------
+           LEFT COLUMN
+        ------------------------------ */
+
+        .left-column img.headshot {
+            width: 100%;
+            max-width: 520px;
+
+            display: block;
+
+            object-fit: cover;
+        }
+
+        .contact {
+            padding: 12px 10px;
+            font-size: 18px;
+        }
+
+        .contact h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .contact p {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        .contact .cv-link {
+            font-size: 19px;
+        }
+
+
+        /* ------------------------------
+           RIGHT COLUMN
+        ------------------------------ */
+
+        .right-column {
+            padding: 10px 0 0 0;
+        }
+
+        h1 {
+            margin: 0 0 12px 0;
+
+            font-size: 56px;
+            line-height: 1.15;
+
+            font-weight: 300;
+
+            color: #d39a00;
+        }
+
+        .affiliation {
+            color: #33658a;
+
+            font-size: 29px;
+            line-height: 1.4;
+
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #33658a;
+
+            font-size: 27px;
+
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        .bio {
+            max-width: 760px;
+            font-size: 19px;
+        }
+
+        .bio p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+
+        /* ------------------------------
+           MOBILE / TABLET
+        ------------------------------ */
+
+        @media (max-width: 900px) {
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                gap: 18px;
+
+                flex-wrap: wrap;
+
+                margin-top: 12px;
+            }
+
+            .page {
+                grid-template-columns: 1fr;
+
+                padding: 25px 20px;
+            }
+
+            .right-column {
+                order: 1;
+            }
+
+            .left-column {
+                order: 2;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .affiliation {
+                font-size: 24px;
+            }
+
+            .left-column img.headshot {
+                max-width: 500px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            body {
+                font-size: 16px;
+            }
+
+            .brand-name {
+                font-size: 20px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .affiliation {
+                font-size: 21px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .bio {
+                font-size: 17px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     TOP BAR
+=========================================== -->
+
+<header class="navbar">
+
+    <div class="brand">
+
+        <!-- Upload your Notre Dame logo as nd-logo.png -->
+        <img src="nd-logo.png"
+             alt="University of Notre Dame logo">
+
+        <!-- CHANGE YOUR NAME -->
+        <span class="brand-name">
+            Your Name
+        </span>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="research.html">
+            Research
+        </a>
+
+        <a href="cv.pdf"
+           target="_blank">
+            CV
+        </a>
+
+        <a href="teaching.html">
+            Teaching
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ==========================================
+     MAIN CONTENT
+=========================================== -->
+
+<main class="page">
+
+
+    <!-- LEFT SIDE -->
+
+    <section class="left-column">
+
+        <!-- Upload your picture and name it headshot.jpg -->
+        <img class="headshot"
+             src="headshot.jpg"
+             alt="Portrait of Your Name">
+
+
+        <div class="contact">
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                University of Notre Dame<br>
+
+                <!-- OPTIONAL PHONE -->
+                (000) 000-0000<br>
+
+                <a href="mailto:youremail@nd.edu">
+                    youremail@nd.edu
+                </a>
+            </p>
+
+            <a class="cv-link"
+               href="cv.pdf"
+               target="_blank">
+                CV
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RIGHT SIDE -->
+
+    <section class="right-column">
+
+
+        <!-- CHANGE YOUR NAME -->
+
+        <h1>
+            Your Name
+        </h1>
+
+
+        <div class="affiliation">
+
+            University of Notre Dame<br>
+
+            Department of Economics
+
+        </div>
+
+
+
+        <h2>
+            About
+        </h2>
+
+
+        <div class="bio">
+
+            <p>
+                I am a PhD candidate in the Department of Economics
+                at the University of Notre Dame.
+                My research interests are in applied microeconomics,
+                with a particular focus on
+                [your research areas here].
+            </p>
+
+
+            <p>
+                My current research studies
+                [brief description of your main research agenda].
+                My work uses
+                [methods, datasets, experiments, causal inference, etc.]
+                to examine
+                [main questions you study].
+            </p>
+
+
+            <p>
+                I am on the job market for the
+                2026/2027 academic year.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+</body>
+
+</html>
