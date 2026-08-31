@@ -2,433 +2,880 @@
 <html lang="en">
 
 <head>
+
+    <!-- =========================================================
+         BASIC PAGE INFORMATION
+    ========================================================== -->
+
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <!-- CHANGE THESE -->
-    <title>Your Name | Economics | University of Notre Dame</title>
+    <title>Pietro Pellerito | Economics | University of Notre Dame</title>
 
     <meta name="description"
-          content="Academic website of Your Name, PhD candidate in Economics at the University of Notre Dame. Research in applied microeconomics, labor economics, public economics, and economics of education.">
+          content="I am a PhD candidate at the University of Notre Dame. As an applied microeconomist, my research focuses in the areas of public, labor, and the economics of education. My job market paper uses both traditional and modern causal inference methods to study how school districts respond to inter-district open enrollment competition. Additional work examines light-touch graduation incentives and the labor market effects of dual minimum-wage policies.">
 
-    <meta name="robots" content="index, follow">
+    <meta name="author"
+          content="Pietro Pellerito">
+
+    <meta name="robots"
+          content="index, follow">
+
+
+    <!-- =========================================================
+         STRUCTURED DATA FOR SEARCH ENGINES
+    ========================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pietro Pellerito",
+        "jobTitle": "PhD Candidate in Economics",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Notre Dame"
+        },
+        "worksFor": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Notre Dame"
+        },
+        "email": "mailto:ppelleri@nd.edu",
+        "telephone": "+1-586-899-2969",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "3031 Jenkins Nanovic Hall",
+            "addressLocality": "Notre Dame",
+            "addressRegion": "IN",
+            "postalCode": "46556",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/pietro-pellerito-6b41401b5/"
+        ],
+        "knowsAbout": [
+            "Public Economics",
+            "Labor Economics",
+            "Economics of Education",
+            "Applied Microeconomics",
+            "Causal Inference"
+        ]
+    }
+    </script>
+
+
+    <!-- =========================================================
+         WEBSITE DESIGN
+    ========================================================== -->
 
     <style>
 
-        /* ------------------------------
-           GENERAL
-        ------------------------------ */
+        /* =====================================================
+           GENERAL PAGE SETTINGS
+        ====================================================== */
 
         * {
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
-            background: #ffffff;
-            color: #111;
+            padding: 0;
+
+            background-color: #ffffff;
+
+            color: #111111;
+
             font-family: Arial, Helvetica, sans-serif;
+
             font-size: 18px;
+
             line-height: 1.55;
         }
 
+
+        /* Notre Dame inspired colors
+
+           Gold: #C99700
+           Navy: #0C2340
+           Blue: #1C4F7C
+        */
+
+
         a {
-            color: #0077a3;
+            color: #006b91;
         }
 
         a:hover {
-            color: #d39a00;
+            color: #C99700;
         }
 
 
-        /* ------------------------------
-           TOP NAVIGATION
-        ------------------------------ */
+
+        /* =====================================================
+           TOP NAVIGATION BAR
+        ====================================================== */
 
         .navbar {
-            background-color: #000;
-            color: white;
+
+            width: 100%;
 
             min-height: 70px;
 
+            background-color: #000000;
+
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
 
             padding: 0 28px;
+
+            border-bottom: 1px solid #111111;
         }
+
+
+        /* -----------------------------------------------------
+           LOGO + NAME
+        ------------------------------------------------------ */
 
         .brand {
+
             display: flex;
+
             align-items: center;
-            gap: 15px;
+
+            gap: 16px;
         }
+
 
         .brand img {
+
             width: 58px;
-            height: auto;
+
+            height: 58px;
+
+            object-fit: contain;
+
+            display: block;
         }
+
 
         .brand-name {
+
+            color: #ffffff;
+
             font-size: 24px;
+
             font-weight: 300;
-            color: white;
+
+            white-space: nowrap;
         }
+
+
+
+        /* -----------------------------------------------------
+           NAVIGATION LINKS
+        ------------------------------------------------------ */
 
         .nav-links {
+
             display: flex;
-            gap: 35px;
+
             align-items: center;
+
+            gap: 34px;
         }
+
 
         .nav-links a {
-            color: white;
+
+            color: #ffffff;
+
             text-decoration: none;
+
             font-size: 18px;
+
+            font-weight: 400;
+
+            transition: color 0.2s ease;
         }
+
 
         .nav-links a:hover {
-            color: #d39a00;
+
+            color: #C99700;
         }
 
 
-        /* ------------------------------
-           PAGE CONTENT
-        ------------------------------ */
+        .nav-links .active {
+
+            color: #ffffff;
+
+            font-weight: 500;
+        }
+
+
+
+        /* =====================================================
+           MAIN PAGE
+        ====================================================== */
 
         .page {
+
+            width: 100%;
+
             max-width: 1320px;
+
             margin: 0 auto;
 
             display: grid;
+
             grid-template-columns: 520px 1fr;
 
             gap: 45px;
 
-            padding: 30px 35px 60px 35px;
+            padding: 29px 34px 60px 34px;
         }
 
 
-        /* ------------------------------
-           LEFT COLUMN
-        ------------------------------ */
 
-        .left-column img.headshot {
+        /* =====================================================
+           LEFT COLUMN
+        ====================================================== */
+
+        .left-column {
+
             width: 100%;
+        }
+
+
+        /* -----------------------------------------------------
+           HEADSHOT
+        ------------------------------------------------------ */
+
+        .headshot {
+
+            width: 100%;
+
             max-width: 520px;
+
+            height: auto;
 
             display: block;
 
             object-fit: cover;
         }
 
+
+
+        /* -----------------------------------------------------
+           CONTACT INFORMATION
+        ------------------------------------------------------ */
+
         .contact {
-            padding: 12px 10px;
+
+            padding: 14px 10px 0 10px;
+
             font-size: 18px;
         }
 
-        .contact h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
+
+        .contact h2 {
+
+            margin: 0 0 8px 0;
+
+            padding: 0;
+
+            color: #000000;
+
             font-size: 20px;
+
+            font-weight: 700;
         }
+
 
         .contact p {
-            margin-top: 0;
-            margin-bottom: 18px;
+
+            margin: 0 0 18px 0;
+
+            padding: 0;
         }
 
-        .contact .cv-link {
+
+        .contact a {
+
+            color: #006b91;
+
+            text-decoration: underline;
+        }
+
+
+        .contact a:hover {
+
+            color: #C99700;
+        }
+
+
+        .contact-item {
+
+            margin-bottom: 14px;
+        }
+
+
+        .cv-link {
+
+            display: inline-block;
+
+            margin-top: 2px;
+
             font-size: 19px;
         }
 
 
-        /* ------------------------------
-           RIGHT COLUMN
-        ------------------------------ */
+        .linkedin-link {
 
-        .right-column {
-            padding: 10px 0 0 0;
+            display: inline-block;
+
+            margin-top: 10px;
         }
 
+
+
+        /* =====================================================
+           RIGHT COLUMN
+        ====================================================== */
+
+        .right-column {
+
+            padding: 8px 0 0 0;
+        }
+
+
+
+        /* -----------------------------------------------------
+           NAME
+        ------------------------------------------------------ */
+
         h1 {
-            margin: 0 0 12px 0;
+
+            margin: 0 0 16px 0;
+
+            padding: 0;
+
+            color: #C99700;
 
             font-size: 56px;
-            line-height: 1.15;
 
             font-weight: 300;
 
-            color: #d39a00;
+            line-height: 1.15;
         }
+
+
+
+        /* -----------------------------------------------------
+           UNIVERSITY / DEPARTMENT
+        ------------------------------------------------------ */
 
         .affiliation {
-            color: #33658a;
 
-            font-size: 29px;
-            line-height: 1.4;
+            color: #1C4F7C;
 
-            margin-bottom: 35px;
+            font-size: 28px;
+
+            line-height: 1.45;
+
+            margin-bottom: 36px;
         }
 
-        h2 {
-            color: #33658a;
+
+
+        /* -----------------------------------------------------
+           ABOUT HEADING
+        ------------------------------------------------------ */
+
+        .about-heading {
+
+            color: #1C4F7C;
 
             font-size: 27px;
 
-            margin-top: 0;
-            margin-bottom: 18px;
+            font-weight: 700;
+
+            margin: 0 0 20px 0;
         }
+
+
+
+        /* -----------------------------------------------------
+           BIOGRAPHY
+        ------------------------------------------------------ */
 
         .bio {
+
             max-width: 760px;
+
+            color: #111111;
+
             font-size: 19px;
+
+            line-height: 1.6;
         }
+
 
         .bio p {
+
             margin-top: 0;
-            margin-bottom: 20px;
+
+            margin-bottom: 22px;
         }
 
 
-        /* ------------------------------
-           MOBILE / TABLET
-        ------------------------------ */
 
-        @media (max-width: 900px) {
+        /* =====================================================
+           TABLET
+        ====================================================== */
 
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
+        @media (max-width: 950px) {
 
-                padding: 15px 20px;
+            .page {
+
+                grid-template-columns: 42% 1fr;
+
+                gap: 35px;
+
+                padding-left: 25px;
+
+                padding-right: 25px;
             }
 
+
+            h1 {
+
+                font-size: 47px;
+            }
+
+
+            .affiliation {
+
+                font-size: 25px;
+            }
+
+
+            .bio {
+
+                font-size: 18px;
+            }
+
+        }
+
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 760px) {
+
+            .navbar {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding: 14px 20px 16px 20px;
+            }
+
+
+            .brand {
+
+                width: 100%;
+            }
+
+
+            .brand-name {
+
+                font-size: 21px;
+            }
+
+
+            .brand img {
+
+                width: 50px;
+
+                height: 50px;
+            }
+
+
             .nav-links {
-                gap: 18px;
+
+                width: 100%;
+
+                margin-top: 14px;
+
+                gap: 21px;
 
                 flex-wrap: wrap;
+            }
+
+
+            .nav-links a {
+
+                font-size: 16px;
+            }
+
+
+            .page {
+
+                display: flex;
+
+                flex-direction: column;
+
+                padding: 28px 20px 50px 20px;
+            }
+
+
+            /*
+            On mobile the name/about section appears first,
+            followed by the photograph and contact information.
+            */
+
+            .right-column {
+
+                order: 1;
+
+                padding-top: 0;
+            }
+
+
+            .left-column {
+
+                order: 2;
 
                 margin-top: 12px;
             }
 
-            .page {
-                grid-template-columns: 1fr;
-
-                padding: 25px 20px;
-            }
-
-            .right-column {
-                order: 1;
-            }
-
-            .left-column {
-                order: 2;
-            }
 
             h1 {
-                font-size: 42px;
+
+                font-size: 40px;
             }
 
+
             .affiliation {
+
+                font-size: 23px;
+
+                margin-bottom: 27px;
+            }
+
+
+            .about-heading {
+
                 font-size: 24px;
             }
 
-            .left-column img.headshot {
-                max-width: 500px;
+
+            .bio {
+
+                font-size: 17px;
             }
+
+
+            .headshot {
+
+                max-width: 520px;
+            }
+
         }
 
 
-        @media (max-width: 500px) {
 
-            body {
-                font-size: 16px;
-            }
+        /* =====================================================
+           SMALL MOBILE
+        ====================================================== */
 
-            .brand-name {
-                font-size: 20px;
-            }
-
-            .nav-links a {
-                font-size: 16px;
-            }
+        @media (max-width: 450px) {
 
             h1 {
-                font-size: 36px;
+
+                font-size: 35px;
             }
 
+
             .affiliation {
+
                 font-size: 21px;
             }
 
-            h2 {
-                font-size: 23px;
+
+            .nav-links {
+
+                gap: 15px;
             }
 
-            .bio {
-                font-size: 17px;
+
+            .contact {
+
+                font-size: 16px;
             }
+
         }
 
+
     </style>
+
 </head>
+
 
 
 <body>
 
 
-<!-- ==========================================
-     TOP BAR
-=========================================== -->
+    <!-- =====================================================
+         TOP NAVIGATION
+    ====================================================== -->
 
-<header class="navbar">
-
-    <div class="brand">
-
-        <!-- Upload your Notre Dame logo as nd-logo.png -->
-        <img src="nd-logo.png"
-             alt="University of Notre Dame logo">
-
-        <!-- CHANGE YOUR NAME -->
-        <span class="brand-name">
-            Your Name
-        </span>
-
-    </div>
+    <header class="navbar">
 
 
-    <nav class="nav-links">
+        <!-- -------------------------------------------------
+             LEFT: NOTRE DAME LOGO + NAME
+        -------------------------------------------------- -->
 
-        <a href="index.html">
-            Home
-        </a>
+        <div class="brand">
 
-        <a href="research.html">
-            Research
-        </a>
+            <img
+                src="nd_logo.png"
+                alt="University of Notre Dame logo"
+            >
 
-        <a href="cv.pdf"
-           target="_blank">
-            CV
-        </a>
+            <span class="brand-name">
+                Pietro Pellerito
+            </span>
 
-        <a href="teaching.html">
-            Teaching
-        </a>
-
-    </nav>
-
-</header>
+        </div>
 
 
 
-<!-- ==========================================
-     MAIN CONTENT
-=========================================== -->
+        <!-- -------------------------------------------------
+             RIGHT: NAVIGATION
+        -------------------------------------------------- -->
 
-<main class="page">
-
-
-    <!-- LEFT SIDE -->
-
-    <section class="left-column">
-
-        <!-- Upload your picture and name it headshot.jpg -->
-        <img class="headshot"
-             src="headshot.jpg"
-             alt="Portrait of Your Name">
+        <nav class="nav-links"
+             aria-label="Main navigation">
 
 
-        <div class="contact">
+            <a class="active"
+               href="index.html">
+                Home
+            </a>
 
-            <h3>
-                Contact
-            </h3>
 
-            <p>
-                University of Notre Dame<br>
+            <a href="research.html">
+                Research
+            </a>
 
-                <!-- OPTIONAL PHONE -->
-                (000) 000-0000<br>
 
-                <a href="mailto:youremail@nd.edu">
-                    youremail@nd.edu
-                </a>
-            </p>
-
-            <a class="cv-link"
-               href="cv.pdf"
-               target="_blank">
+            <a href="cv.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
                 CV
             </a>
 
-        </div>
 
-    </section>
-
-
-
-    <!-- RIGHT SIDE -->
-
-    <section class="right-column">
+            <a href="teaching.html">
+                Teaching
+            </a>
 
 
-        <!-- CHANGE YOUR NAME -->
+        </nav>
 
-        <h1>
-            Your Name
-        </h1>
-
-
-        <div class="affiliation">
-
-            University of Notre Dame<br>
-
-            Department of Economics
-
-        </div>
+    </header>
 
 
 
-        <h2>
-            About
-        </h2>
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="page">
 
 
-        <div class="bio">
+        <!-- =================================================
+             LEFT COLUMN
+        ================================================== -->
 
-            <p>
-                I am a PhD candidate in the Department of Economics
-                at the University of Notre Dame.
-                My research interests are in applied microeconomics,
-                with a particular focus on
-                [your research areas here].
-            </p>
+        <section class="left-column">
 
 
-            <p>
-                My current research studies
-                [brief description of your main research agenda].
-                My work uses
-                [methods, datasets, experiments, causal inference, etc.]
-                to examine
-                [main questions you study].
-            </p>
+            <!-- ---------------------------------------------
+                 HEADSHOT
+            ---------------------------------------------- -->
+
+            <img
+                class="headshot"
+                src="headshot.jpg"
+                alt="Pietro Pellerito"
+            >
 
 
-            <p>
-                I am on the job market for the
-                2026/2027 academic year.
-            </p>
 
-        </div>
+            <!-- ---------------------------------------------
+                 CONTACT INFORMATION
+            ---------------------------------------------- -->
 
-    </section>
+            <div class="contact">
 
 
-</main>
+                <h2>
+                    Contact
+                </h2>
+
+
+                <div class="contact-item">
+
+                    <a href="tel:+15868992969">
+                        (586) 899-2969
+                    </a>
+
+                    <br>
+
+                    <a href="mailto:ppelleri@nd.edu">
+                        ppelleri@nd.edu
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    3031 Jenkins Nanovic Hall
+
+                    <br>
+
+                    Notre Dame, IN 46556
+
+                    <br>
+
+                    USA
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <a class="cv-link"
+                       href="cv.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        CV
+                    </a>
+
+                    <br>
+
+                    <a class="linkedin-link"
+                       href="https://www.linkedin.com/in/pietro-pellerito-6b41401b5/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RIGHT COLUMN
+        ================================================== -->
+
+        <section class="right-column">
+
+
+            <!-- ---------------------------------------------
+                 NAME
+            ---------------------------------------------- -->
+
+            <h1>
+                Pietro Pellerito
+            </h1>
+
+
+
+            <!-- ---------------------------------------------
+                 AFFILIATION
+            ---------------------------------------------- -->
+
+            <div class="affiliation">
+
+                University of Notre Dame
+
+                <br>
+
+                Department of Economics
+
+            </div>
+
+
+
+            <!-- ---------------------------------------------
+                 ABOUT
+            ---------------------------------------------- -->
+
+            <h2 class="about-heading">
+                About
+            </h2>
+
+
+            <div class="bio">
+
+
+                <p>
+                    I am a PhD candidate at the University of Notre Dame.
+                    As an applied microeconomist, my research focuses in the
+                    areas of public, labor, and the economics of education.
+                    My job market paper uses both traditional and modern
+                    causal inference methods to study how school districts
+                    respond to inter-district open enrollment competition.
+                    Additional work examines light-touch graduation incentives
+                    and the labor market effects of dual minimum-wage policies.
+                </p>
+
+
+                <!-- =================================================
+                     OPTIONAL SECOND BIO PARAGRAPH
+
+                     If you want to add another paragraph later,
+                     remove the opening and closing comment markers
+                     around the <p> section below.
+
+                <p>
+                    Write your second biography paragraph here.
+                </p>
+
+                ================================================== -->
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
 
 
 </body>
