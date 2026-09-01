@@ -11,7 +11,7 @@
     <title>Research | Pietro Pellerito | University of Notre Dame</title>
 
     <meta name="description"
-          content="Research by Pietro Pellerito, PhD candidate in Economics at the University of Notre Dame, focusing on public economics, labor economics, and the economics of education.">
+          content="Research by Pietro Pellerito, PhD candidate in Economics at the University of Notre Dame. Research interests include public economics, labor economics, and the economics of education.">
 
     <meta name="author"
           content="Pietro Pellerito">
@@ -54,6 +54,7 @@
             color: #006b91;
         }
 
+
         a:hover {
             color: #C99700;
         }
@@ -61,7 +62,7 @@
 
 
         /* =====================================================
-           TOP NAVIGATION BAR
+           NAVIGATION BAR
         ====================================================== */
 
         .navbar {
@@ -85,14 +86,16 @@
 
 
         .brand {
+
             display: flex;
+
             align-items: center;
         }
 
 
         .brand img {
 
-            width: 95px;
+            width: 245px;
 
             height: auto;
 
@@ -127,18 +130,20 @@
 
 
         .nav-links a:hover {
+
             color: #C99700;
         }
 
 
         .nav-links .active {
+
             color: #C99700;
         }
 
 
 
         /* =====================================================
-           MAIN RESEARCH PAGE
+           MAIN PAGE
         ====================================================== */
 
         .page {
@@ -149,58 +154,18 @@
 
             margin: 0 auto;
 
-            padding: 60px 45px 90px 45px;
+            padding: 50px 45px 90px 45px;
         }
 
 
 
         /* =====================================================
-           PAGE HEADER
+           PAGE TITLE
         ====================================================== */
-
-        .research-header {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 28px;
-
-            margin-bottom: 45px;
-        }
-
-
-        .research-icon {
-
-            width: 88px;
-
-            height: 88px;
-
-            min-width: 88px;
-
-            border: 3px solid #C99700;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            color: #C99700;
-
-            font-family: Georgia, "Times New Roman", serif;
-
-            font-size: 54px;
-
-            font-weight: 400;
-
-            line-height: 1;
-        }
-
 
         h1 {
 
-            margin: 0;
+            margin: 0 0 50px 0;
 
             padding: 0;
 
@@ -210,13 +175,13 @@
 
             font-weight: 300;
 
-            line-height: 1.1;
+            line-height: 1.15;
         }
 
 
 
         /* =====================================================
-           SECTIONS
+           RESEARCH SECTIONS
         ====================================================== */
 
         .research-section {
@@ -227,38 +192,38 @@
 
         .section-title {
 
-            color: #1C4F7C;
+            color: #C99700;
 
-            font-size: 31px;
+            font-size: 32px;
 
-            font-weight: 700;
+            font-weight: 300;
 
-            margin: 0 0 26px 0;
+            margin: 0 0 24px 0;
         }
 
 
 
         /* =====================================================
-           PAPER
+           PAPER TITLES
         ====================================================== */
 
         .paper {
 
-            margin-bottom: 42px;
+            margin-bottom: 36px;
         }
 
 
         .paper-title {
 
-            margin: 0 0 16px 0;
+            margin: 0 0 18px 0;
 
             color: #111111;
 
-            font-size: 22px;
+            font-size: 19px;
 
-            font-weight: 700;
+            font-weight: 500;
 
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
 
@@ -267,8 +232,6 @@
             color: #111111;
 
             text-decoration: underline;
-
-            text-decoration-thickness: 1px;
 
             text-underline-offset: 3px;
         }
@@ -280,74 +243,64 @@
         }
 
 
-        .abstract-label {
 
-            color: #1C4F7C;
-
-            font-size: 20px;
-
-            font-weight: 700;
-
-            margin: 18px 0 8px 0;
-        }
-
+        /* =====================================================
+           ABSTRACT
+        ====================================================== */
 
         .abstract {
 
-            max-width: 1080px;
+            max-width: 1100px;
 
-            font-size: 18px;
+            margin: 0 0 20px 40px;
 
-            line-height: 1.7;
+            font-size: 17px;
 
-            text-align: justify;
+            line-height: 1.75;
+        }
 
-            margin: 0;
+
+        .abstract-label {
+
+            font-style: italic;
+
+            font-weight: 500;
         }
 
 
 
         /* =====================================================
-           WORK IN PROGRESS
+           WORKING PAPERS / WORK IN PROGRESS
         ====================================================== */
 
-        .work-list {
+        .research-item {
 
-            margin: 0;
+            margin: 0 0 22px 0;
 
-            padding-left: 25px;
+            font-size: 18px;
 
-            max-width: 1050px;
-        }
-
-
-        .work-list li {
-
-            margin-bottom: 24px;
-
-            padding-left: 5px;
-        }
-
-
-        .work-title {
-
-            font-size: 19px;
-
-            font-weight: 400;
+            line-height: 1.6;
         }
 
 
         .coauthors {
 
-            display: block;
+            font-style: normal;
+        }
 
-            margin-top: 3px;
 
-            font-style: italic;
 
-            color: #444444;
+        /* =====================================================
+           DIVIDERS
+        ====================================================== */
 
-            font-size: 17px;
+        .divider {
+
+            border: 0;
+
+            border-top: 1px solid #e1e1e1;
+
+            margin: 55px 0;
         }
 
 
@@ -357,6 +310,7 @@
         ====================================================== */
 
         @media (max-width: 760px) {
+
 
             .navbar {
 
@@ -398,49 +352,31 @@
             }
 
 
-            .research-header {
-
-                gap: 18px;
-
-                margin-bottom: 38px;
-            }
-
-
-            .research-icon {
-
-                width: 68px;
-
-                height: 68px;
-
-                min-width: 68px;
-
-                font-size: 42px;
-            }
-
-
             h1 {
 
                 font-size: 42px;
+
+                margin-bottom: 40px;
             }
 
 
             .section-title {
 
-                font-size: 27px;
-            }
-
-
-            .paper-title {
-
-                font-size: 20px;
+                font-size: 28px;
             }
 
 
             .abstract {
 
-                font-size: 17px;
+                margin-left: 0;
 
-                text-align: left;
+                font-size: 17px;
+            }
+
+
+            .research-item {
+
+                font-size: 17px;
             }
 
         }
@@ -449,17 +385,15 @@
 
         @media (max-width: 450px) {
 
+
             .nav-links {
+
                 gap: 15px;
             }
 
 
-            .research-icon {
-                display: none;
-            }
-
-
             h1 {
+
                 font-size: 38px;
             }
 
@@ -476,18 +410,20 @@
 
 
     <!-- =====================================================
-         TOP NAVIGATION
+         NAVIGATION
     ====================================================== -->
 
     <header class="navbar">
 
+
+        <!-- NOTRE DAME LOGO -->
 
         <div class="brand">
 
             <a href="index.html">
 
                 <img
-                    src="nd_logo.jpg"
+                    src="./nd_logo.jpg"
                     alt="University of Notre Dame logo"
                 >
 
@@ -496,6 +432,8 @@
         </div>
 
 
+
+        <!-- NAVIGATION LINKS -->
 
         <nav class="nav-links"
              aria-label="Main navigation">
@@ -537,21 +475,70 @@
     <main class="page">
 
 
+        <!-- PAGE TITLE -->
+
+        <h1>
+            Research
+        </h1>
+
+
+
         <!-- =================================================
-             RESEARCH PAGE TITLE
+             JOB MARKET PAPER
         ================================================== -->
 
-        <div class="research-header">
+        <section class="research-section">
 
-            <div class="research-icon">
-                R
-            </div>
 
-            <h1>
-                Research
-            </h1>
+            <h2 class="section-title">
+                Job Market Paper
+            </h2>
 
-        </div>
+
+            <article class="paper">
+
+
+                <p class="paper-title">
+
+                    "Breaking Boundaries: Competitive Effects of
+                    Inter-District School Choice"
+
+                </p>
+
+
+                <p class="abstract">
+
+                    <span class="abstract-label">
+                        Abstract:
+                    </span>
+
+                    Inter-district school choice (IDSC), which allows students to attend public schools outside their residential districts, '
+                    may improve educational quality by exposing districts to enrollment pressure. Yet district responses to expanded access to 
+                    alternative public schools remain understudied. I exploit an unanticipated Indiana funding reform that eliminated transfer 
+                    tuition in 2010, sharply reducing household participation costs. Using statewide student-level administrative data, I estimate 
+                    a continuous difference-in-differences model using districts’ IDSC enrollment-threat exposure, constructed from pre-policy 
+                    achievement gaps with neighboring districts; districts competing against higher-achieving neighbors face greater enrollment 
+                    pressure after transfer tuition is eliminated. A one-standard-deviation increase in exposure produces a net enrollment loss 
+                    through transfers equal to 2.06 percent of district enrollment. The same increase raises district value added, a measure of 
+                    academic quality, by 0.0074 test-score standard deviations, reducing the initial achievement gap between lower- and higher-exposure 
+                    districts by 5.3 percent. Gains are concentrated in elementary grades, where the effect reaches 0.0156 standard deviations. 
+                    Quality rises immediately, while IDSC participation and enrollment shifts develop gradually, consistent with responses to 
+                    anticipated rather than realized losses. I find no evidence that observed student composition or measured resources explain 
+                    the quality response. Consistent with enrollment threats, elementary-grade effects are larger in smaller, geographically compact 
+                    districts, where losses are harder to absorb and alternatives more accessible. These findings identify enrollment incentives 
+                    as a channel through which reducing IDSC barriers can improve educational quality.
+
+                </p>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <hr class="divider">
 
 
 
@@ -568,57 +555,42 @@
 
 
 
-            <article class="paper">
+            <p class="research-item">
+
+                "Staying Connected: Experimental Effects of Weekly Text
+                Messages in an Adult High School"
+
+                <span class="coauthors">
+                    – with Patrick Turner and Alberto Ortega
+                </span>
+
+            </p>
 
 
-                <h3 class="paper-title">
+            <!--
 
-                    Competition and School District Behavior:
-                    Evidence from Inter-District Open Enrollment
+            ADD MORE WORKING PAPERS HERE.
 
-                </h3>
+            Copy this block:
 
+            <p class="research-item">
 
+                "Title of Paper"
 
-                <div class="abstract-label">
-                    Abstract
-                </div>
+                <span class="coauthors">
+                    – with Coauthor Name
+                </span>
 
+            </p>
 
-
-                <p class="abstract">
-
-                    School choice policies have dramatically expanded in the
-                    United States over the past few decades. Yet, there is little
-                    direct evidence on how public school districts respond to
-                    competition. I use a new identification strategy to estimate
-                    the impacts of exposure to inter-district open enrollment
-                    competition on the traditional public school districts in
-                    Michigan. I leverage both rule-based limitations and
-                    frictional distance associated with cross-district enrollment
-                    to develop instruments that capture the intensity of
-                    competitive pressure as it varies over time, across grades,
-                    and across districts. I find evidence of systematic
-                    responses, particularly in revenue generation, with districts
-                    raising additional local revenue and reducing reliance on the
-                    state funding formula in response to competitive pressure.
-                    The effect on total expenditure is negative and only
-                    marginally significant, but there are large and economically
-                    meaningful reallocations in spending toward instruction and
-                    away from auxiliary services. These patterns are stronger
-                    among higher-capacity districts, indicating heterogeneity in
-                    districts' ability to respond. There is limited evidence of
-                    improvements in student outcomes or changes in enrollment and
-                    composition at the district level, suggesting that responses
-                    occur primarily through fiscal and expenditure channels.
-
-                </p>
-
-
-            </article>
+            -->
 
 
         </section>
+
+
+
+        <hr class="divider">
 
 
 
@@ -634,46 +606,44 @@
             </h2>
 
 
-            <ul class="work-list">
 
+            <p class="research-item">
 
-                <li>
+                "Firm Behavior to Dual Minimum Wage Policies"
 
-                    <span class="work-title">
+                <span class="coauthors">
+                    – with Tim Spilde
+                </span>
 
-                        Betting on Graduation: Evidence on Incentives to
-                        Graduate High School and Financial Independence
-
-                    </span>
-
-                    <span class="coauthors">
-
-                        joint with William Evans and Grace Li
-
-                    </span>
-
-                </li>
+            </p>
 
 
 
-                <li>
+            <p class="research-item">
 
-                    <span class="work-title">
+                "Do ILEARN More? Retention, Resources, and Future
+                Academic Attainment"
 
-                        Dual Mandate Minimum Wage Policies
-
-                    </span>
-
-                    <span class="coauthors">
-
-                        joint with Joel Lessem
-
-                    </span>
-
-                </li>
+            </p>
 
 
-            </ul>
+            <!--
+
+            ADD MORE WORKS IN PROGRESS HERE.
+
+            Copy this block:
+
+            <p class="research-item">
+
+                "Title of Project"
+
+                <span class="coauthors">
+                    – with Coauthor Name
+                </span>
+
+            </p>
+
+            -->
 
 
         </section>
@@ -683,5 +653,7 @@
 
 
 </body>
+
+</html>
 
 </html>
