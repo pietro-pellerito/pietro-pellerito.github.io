@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Research | Pietro Pellerito | University of Notre Dame</title>
+
+    <meta name="description"
+          content="Research by Pietro Pellerito, PhD candidate in Economics at the University of Notre Dame, focusing on public economics, labor economics, and the economics of education.">
+
+    <meta name="author"
+          content="Pietro Pellerito">
+
+    <meta name="robots"
+          content="index, follow">
+
+
+    <style>
+
+        /* =====================================================
+           GENERAL
+        ====================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background-color: #ffffff;
+
+            color: #111111;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+        }
+
+
+        a {
+            color: #006b91;
+        }
+
+        a:hover {
+            color: #C99700;
+        }
+
+
+
+        /* =====================================================
+           TOP NAVIGATION BAR
+        ====================================================== */
+
+        .navbar {
+
+            width: 100%;
+
+            min-height: 82px;
+
+            background-color: #000000;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 0 28px;
+
+            border-bottom: 1px solid #111111;
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .brand img {
+
+            width: 95px;
+
+            height: auto;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        .nav-links {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 34px;
+        }
+
+
+        .nav-links a {
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            font-weight: 400;
+
+            transition: color 0.2s ease;
+        }
+
+
+        .nav-links a:hover {
+            color: #C99700;
+        }
+
+
+        .nav-links .active {
+            color: #C99700;
+        }
+
+
+
+        /* =====================================================
+           MAIN RESEARCH PAGE
+        ====================================================== */
+
+        .page {
+
+            width: 100%;
+
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            padding: 60px 45px 90px 45px;
+        }
+
+
+
+        /* =====================================================
+           PAGE HEADER
+        ====================================================== */
+
+        .research-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+
+            margin-bottom: 45px;
+        }
+
+
+        .research-icon {
+
+            width: 88px;
+
+            height: 88px;
+
+            min-width: 88px;
+
+            border: 3px solid #C99700;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #C99700;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 54px;
+
+            font-weight: 400;
+
+            line-height: 1;
+        }
+
+
+        h1 {
+
+            margin: 0;
+
+            padding: 0;
+
+            color: #C99700;
+
+            font-size: 55px;
+
+            font-weight: 300;
+
+            line-height: 1.1;
+        }
+
+
+
+        /* =====================================================
+           SECTIONS
+        ====================================================== */
+
+        .research-section {
+
+            margin-bottom: 60px;
+        }
+
+
+        .section-title {
+
+            color: #1C4F7C;
+
+            font-size: 31px;
+
+            font-weight: 700;
+
+            margin: 0 0 26px 0;
+        }
+
+
+
+        /* =====================================================
+           PAPER
+        ====================================================== */
+
+        .paper {
+
+            margin-bottom: 42px;
+        }
+
+
+        .paper-title {
+
+            margin: 0 0 16px 0;
+
+            color: #111111;
+
+            font-size: 22px;
+
+            font-weight: 700;
+
+            line-height: 1.4;
+        }
+
+
+        .paper-title a {
+
+            color: #111111;
+
+            text-decoration: underline;
+
+            text-decoration-thickness: 1px;
+
+            text-underline-offset: 3px;
+        }
+
+
+        .paper-title a:hover {
+
+            color: #C99700;
+        }
+
+
+        .abstract-label {
+
+            color: #1C4F7C;
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+            margin: 18px 0 8px 0;
+        }
+
+
+        .abstract {
+
+            max-width: 1080px;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            text-align: justify;
+
+            margin: 0;
+        }
+
+
+
+        /* =====================================================
+           WORK IN PROGRESS
+        ====================================================== */
+
+        .work-list {
+
+            margin: 0;
+
+            padding-left: 25px;
+
+            max-width: 1050px;
+        }
+
+
+        .work-list li {
+
+            margin-bottom: 24px;
+
+            padding-left: 5px;
+        }
+
+
+        .work-title {
+
+            font-size: 19px;
+
+            font-weight: 400;
+        }
+
+
+        .coauthors {
+
+            display: block;
+
+            margin-top: 3px;
+
+            font-style: italic;
+
+            color: #444444;
+
+            font-size: 17px;
+        }
+
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 760px) {
+
+            .navbar {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding: 14px 20px 16px 20px;
+            }
+
+
+            .brand img {
+
+                width: 85px;
+            }
+
+
+            .nav-links {
+
+                width: 100%;
+
+                margin-top: 14px;
+
+                gap: 21px;
+
+                flex-wrap: wrap;
+            }
+
+
+            .nav-links a {
+
+                font-size: 16px;
+            }
+
+
+            .page {
+
+                padding: 38px 22px 65px 22px;
+            }
+
+
+            .research-header {
+
+                gap: 18px;
+
+                margin-bottom: 38px;
+            }
+
+
+            .research-icon {
+
+                width: 68px;
+
+                height: 68px;
+
+                min-width: 68px;
+
+                font-size: 42px;
+            }
+
+
+            h1 {
+
+                font-size: 42px;
+            }
+
+
+            .section-title {
+
+                font-size: 27px;
+            }
+
+
+            .paper-title {
+
+                font-size: 20px;
+            }
+
+
+            .abstract {
+
+                font-size: 17px;
+
+                text-align: left;
+            }
+
+        }
+
+
+
+        @media (max-width: 450px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+
+            .research-icon {
+                display: none;
+            }
+
+
+            h1 {
+                font-size: 38px;
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <!-- =====================================================
+         TOP NAVIGATION
+    ====================================================== -->
+
+    <header class="navbar">
+
+
+        <div class="brand">
+
+            <a href="index.html">
+
+                <img
+                    src="nd_logo.jpg"
+                    alt="University of Notre Dame logo"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <nav class="nav-links"
+             aria-label="Main navigation">
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a class="active"
+               href="research.html">
+                Research
+            </a>
+
+
+            <a href="cv.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+                CV
+            </a>
+
+
+            <a href="teaching.html">
+                Teaching
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="page">
+
+
+        <!-- =================================================
+             RESEARCH PAGE TITLE
+        ================================================== -->
+
+        <div class="research-header">
+
+            <div class="research-icon">
+                R
+            </div>
+
+            <h1>
+                Research
+            </h1>
+
+        </div>
+
+
+
+        <!-- =================================================
+             WORKING PAPERS
+        ================================================== -->
+
+        <section class="research-section">
+
+
+            <h2 class="section-title">
+                Working Papers
+            </h2>
+
+
+
+            <article class="paper">
+
+
+                <h3 class="paper-title">
+
+                    Competition and School District Behavior:
+                    Evidence from Inter-District Open Enrollment
+
+                </h3>
+
+
+
+                <div class="abstract-label">
+                    Abstract
+                </div>
+
+
+
+                <p class="abstract">
+
+                    School choice policies have dramatically expanded in the
+                    United States over the past few decades. Yet, there is little
+                    direct evidence on how public school districts respond to
+                    competition. I use a new identification strategy to estimate
+                    the impacts of exposure to inter-district open enrollment
+                    competition on the traditional public school districts in
+                    Michigan. I leverage both rule-based limitations and
+                    frictional distance associated with cross-district enrollment
+                    to develop instruments that capture the intensity of
+                    competitive pressure as it varies over time, across grades,
+                    and across districts. I find evidence of systematic
+                    responses, particularly in revenue generation, with districts
+                    raising additional local revenue and reducing reliance on the
+                    state funding formula in response to competitive pressure.
+                    The effect on total expenditure is negative and only
+                    marginally significant, but there are large and economically
+                    meaningful reallocations in spending toward instruction and
+                    away from auxiliary services. These patterns are stronger
+                    among higher-capacity districts, indicating heterogeneity in
+                    districts' ability to respond. There is limited evidence of
+                    improvements in student outcomes or changes in enrollment and
+                    composition at the district level, suggesting that responses
+                    occur primarily through fiscal and expenditure channels.
+
+                </p>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             WORK IN PROGRESS
+        ================================================== -->
+
+        <section class="research-section">
+
+
+            <h2 class="section-title">
+                Work in Progress
+            </h2>
+
+
+            <ul class="work-list">
+
+
+                <li>
+
+                    <span class="work-title">
+
+                        Betting on Graduation: Evidence on Incentives to
+                        Graduate High School and Financial Independence
+
+                    </span>
+
+                    <span class="coauthors">
+
+                        joint with William Evans and Grace Li
+
+                    </span>
+
+                </li>
+
+
+
+                <li>
+
+                    <span class="work-title">
+
+                        Dual Mandate Minimum Wage Policies
+
+                    </span>
+
+                    <span class="coauthors">
+
+                        joint with Joel Lessem
+
+                    </span>
+
+                </li>
+
+
+            </ul>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
