@@ -88,7 +88,7 @@
             padding: 0;
             background-color: #ffffff;
             color: #111111;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             font-size: 18px;
             line-height: 1.55;
         }
@@ -141,7 +141,9 @@
             text-decoration: none;
             font-size: 21px;
             font-weight: 500;
-            transition: color 0.2s ease;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
         }
 
         .nav-links a:hover {
@@ -151,12 +153,13 @@
         .nav-links .active {
             color: #C99700;
             font-weight: 700;
+            border-bottom-color: #C99700;
         }
 
         .site-name {
             color: #C99700;
             text-decoration: none;
-            font-size: 28px;
+            font-size: 31px;
             font-weight: 600;
             white-space: nowrap;
         }
@@ -216,7 +219,7 @@
             padding: 0 0 8px 0;
             border-bottom: 1px solid #b8b8b8;
             color: #111111;
-            font-size: 26px;
+            font-size: 18px;
             font-weight: 700;
         }
 
@@ -242,6 +245,11 @@
         .contact-address {
             text-align: center;
             line-height: 1.35;
+            color: #555555;
+        }
+
+        .contact-email {
+            font-weight: 600;
         }
 
         .contact a {
@@ -254,14 +262,14 @@
         }
 
         .right-column {
-            padding-top: 2px;
+            padding-top: 0;
         }
 
         h1 {
             margin: 0 0 30px 0;
             padding: 0;
             color: #000000;
-            font-size: 58px;
+            font-size: 60px;
             font-weight: 700;
             line-height: 1.08;
         }
@@ -281,10 +289,19 @@
             margin-bottom: 0;
         }
 
+        .job-market-status {
+            color: #0C2340;
+            font-weight: 700;
+        }
+
+        .intro-cv-row {
+            margin: -9px 0 25px 0;
+        }
+
         .intro-cv {
             display: inline-block;
-            margin-top: 8px;
-            font-size: 19px;
+            font-size: 18px;
+            font-weight: 600;
         }
 
 
@@ -310,16 +327,16 @@
 
         .job-market-paper h2 {
             margin: 0 0 22px 0;
-            color: #000000;
-            font-size: 30px;
+            color: #0C2340;
+            font-size: 31px;
             font-weight: 700;
             line-height: 1.25;
         }
 
         .job-market-paper h3 {
-            margin: 0 0 16px 0;
+            margin: 0 0 18px 0;
             color: #111111;
-            font-size: 22px;
+            font-size: 25px;
             font-weight: 700;
             line-height: 1.35;
         }
@@ -327,7 +344,7 @@
         .job-market-paper p {
             margin: 0;
             width: 100%;
-            font-size: 18px;
+            font-size: 19px;
             line-height: 1.65;
         }
 
@@ -395,7 +412,7 @@
             }
 
             .site-name {
-                font-size: 22px;
+                font-size: 24px;
             }
 
             .nav-links {
@@ -564,7 +581,7 @@
                 <div class="contact">
 
                     <h2>
-                        Contact Info
+                        Contact
                     </h2>
 
                     <div class="contact-item">
@@ -614,24 +631,26 @@
 
                     <!-- BLOCK 2: Job market status + JMP description -->
                     <p>
-                        <strong>I am on the 2026–2027 job market.</strong>
+                        <strong class="job-market-status">I am on the 2026–2027 job market.</strong>
                         My job market paper studies how school districts respond 
                         to enrollment competition when statutory barriers to participation 
                         in inter-district school choice are lifted.
                     </p>
+
+                    <div class="intro-cv-row">
+                        <a class="intro-cv"
+                           href="cv.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Curriculum Vitae
+                        </a>
+                    </div>
 
                     <!-- BLOCK 3: Institutional affiliations -->
                     <p>
                         I am a PhD Fellow with the Program for Interdisciplinary Education Research
                         and a Research Affiliate with the Wilson Sheehan Lab for Economic Opportunities.
                     </p>
-
-                    <a class="intro-cv"
-                       href="cv.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        CV
-                    </a>
 
                 </div>
 
