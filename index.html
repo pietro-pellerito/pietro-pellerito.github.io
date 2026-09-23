@@ -184,7 +184,7 @@
 
         .profile {
             display: grid;
-            grid-template-columns: 390px 1fr;
+            grid-template-columns: 430px 1fr;
             gap: 58px;
             align-items: start;
         }
@@ -195,7 +195,7 @@
 
         .headshot {
             width: 100%;
-            max-width: 390px;
+            max-width: 430px;
             height: auto;
             display: block;
             object-fit: cover;
@@ -203,15 +203,16 @@
 
         .contact {
             width: 100%;
-            max-width: 390px;
+            max-width: 430px;
             padding: 20px 2px 0 2px;
             text-align: center;
             font-size: 18px;
-            line-height: 1.55;
+            line-height: 1.45;
         }
 
         .contact h2 {
-            margin: 0 0 11px 0;
+            width: 66.666%;
+            margin: 0 auto 13px auto;
             padding: 0 0 8px 0;
             border-bottom: 1px solid #b8b8b8;
             color: #111111;
@@ -221,6 +222,26 @@
 
         .contact-item {
             margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .contact-email,
+        .contact-dot {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-dot {
+            font-size: 21px;
+            line-height: 1;
+        }
+
+        .contact-address {
+            text-align: left;
+            line-height: 1.35;
         }
 
         .contact a {
@@ -547,13 +568,23 @@
                     </h2>
 
                     <div class="contact-item">
-                        3031 Jenkins Nanovic Hall
-                        <br>
-                        <a href="mailto:ppelleri@nd.edu">
-                            ppelleri@nd.edu
-                        </a>
-                        <br>
-                        Notre Dame, IN 46556
+
+                        <div class="contact-email">
+                            <a href="mailto:ppelleri@nd.edu">
+                                ppelleri@nd.edu
+                            </a>
+                        </div>
+
+                        <div class="contact-dot">
+                            &bull;
+                        </div>
+
+                        <div class="contact-address">
+                            3031 Jenkins Nanovic Hall
+                            <br>
+                            Notre Dame, IN 46556
+                        </div>
+
                     </div>
 
                 </div>
