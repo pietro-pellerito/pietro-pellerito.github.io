@@ -22,10 +22,6 @@
 
     <style>
 
-        /* =====================================================
-           GENERAL
-        ====================================================== */
-
         * {
             box-sizing: border-box;
         }
@@ -37,16 +33,11 @@
         body {
             margin: 0;
             padding: 0;
-
             background-color: #ffffff;
-
             color: #111111;
-
-            font-family: Arial, Helvetica, sans-serif;
-
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             font-size: 18px;
-
-            line-height: 1.6;
+            line-height: 1.55;
         }
 
         a {
@@ -63,74 +54,58 @@
         ====================================================== */
 
         .navbar {
-
             width: 100%;
+            background-color: #0C2340;
+            border-bottom: 1px solid #071729;
+        }
 
+        .navbar-inner {
+            width: 100%;
             min-height: 82px;
-
-            background-color: #000000;
-
+            margin: 0;
+            padding: 12px 26px;
             display: flex;
-
             justify-content: space-between;
-
             align-items: center;
-
-            padding: 0 28px;
-
-            border-bottom: 1px solid #111111;
+            gap: 42px;
         }
 
-
-        .brand {
-            display: flex;
-            align-items: center;
+        .site-name {
+            color: #C99700;
+            text-decoration: none;
+            font-size: 31px;
+            font-weight: 600;
+            white-space: nowrap;
         }
 
-
-        .brand img {
-
-            width: 245px;
-
-            height: auto;
-
-            object-fit: contain;
-
-            display: block;
+        .site-name:hover {
+            color: #ffffff;
         }
-
 
         .nav-links {
-
             display: flex;
-
             align-items: center;
-
             gap: 34px;
         }
 
-
         .nav-links a {
-
-            color: #ffffff;
-
+            color: #C99700;
             text-decoration: none;
-
-            font-size: 18px;
-
-            font-weight: 400;
-
-            transition: color 0.2s ease;
+            font-size: 21px;
+            font-weight: 500;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
         }
-
 
         .nav-links a:hover {
-            color: #C99700;
+            color: #ffffff;
         }
-
 
         .nav-links .active {
             color: #C99700;
+            font-weight: 700;
+            border-bottom-color: #C99700;
         }
 
 
@@ -139,312 +114,250 @@
         ====================================================== */
 
         .page {
-
             width: 100%;
-
-            max-width: 1250px;
-
+            max-width: 1540px;
             margin: 0 auto;
-
-            padding: 55px 45px 90px 45px;
+            padding: 44px 26px 58px 26px;
         }
-
-
-        /* =====================================================
-           PAGE TITLE
-        ====================================================== */
 
         h1 {
-
-            margin: 0 0 55px 0;
-
+            margin: 0 0 42px 0;
             padding: 0;
-
-            color: #C99700;
-
-            font-size: 55px;
-
+            color: #000000;
+            font-size: 60px;
             font-weight: 700;
-
-            line-height: 1.15;
+            line-height: 1.08;
         }
 
 
         /* =====================================================
-           UNIVERSITY SECTIONS
+           TEACHING
         ====================================================== */
 
         .institution {
-
-            margin-bottom: 42px;
+            margin-bottom: 48px;
         }
 
+        .institution + .institution {
+            padding-top: 42px;
+            border-top: 1px solid #c9c9c9;
+        }
 
         .institution-name {
-            color: #1C4F7C;
-            font-size: 30px;
+            color: #0C2340;
+            font-size: 31px;
             font-weight: 700;
-            font-style: italic;
-            margin: 0 0 20px 0;
+            margin: 0 0 24px 0;
+            line-height: 1.25;
         }
-
-        /* =====================================================
-           COURSE ENTRIES
-        ====================================================== */
 
         .course {
-
-            margin-bottom: 34px;
+            margin-bottom: 30px;
         }
 
+        .course:last-child {
+            margin-bottom: 0;
+        }
 
         .course-title {
-
-            color: #1C4F7C;
-
-            font-size: 20px;
-
+            color: #111111;
+            font-size: 23px;
             font-weight: 700;
-
             margin: 0 0 8px 0;
+            line-height: 1.35;
         }
-
 
         .course-details {
-
             margin: 0;
-
             padding-left: 24px;
-
             list-style-type: square;
+            font-size: 19px;
+            line-height: 1.6;
         }
-
 
         .course-details li {
-
-            margin-bottom: 8px;
-
-            padding-left: 4px;
+            margin-bottom: 6px;
+            padding-left: 3px;
         }
-
 
         .course-details a {
-
             color: #006b91;
-
             text-decoration: underline;
-
             text-underline-offset: 2px;
+            font-weight: 600;
         }
 
-
         .course-details a:hover {
-
             color: #C99700;
         }
 
 
         /* =====================================================
-           MOBILE
+           FOOTER
         ====================================================== */
+
+        .footer {
+            text-align: center;
+            padding: 29px 20px 0 20px;
+            color: #333333;
+            font-size: 23px;
+        }
+
+
+        /* =====================================================
+           TABLET / MOBILE
+        ====================================================== */
+
+        @media (max-width: 950px) {
+
+            .navbar-inner {
+                padding-left: 25px;
+                padding-right: 25px;
+                gap: 30px;
+            }
+
+            .nav-links {
+                gap: 24px;
+            }
+
+            .page {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+        }
 
         @media (max-width: 760px) {
 
-            .navbar {
-
-                flex-direction: column;
-
-                align-items: flex-start;
-
-                padding: 14px 20px 16px 20px;
+            .navbar-inner {
+                min-height: 0;
+                padding: 15px 20px 17px 20px;
+                align-items: center;
+                gap: 18px;
             }
 
-
-            .brand img {
-
-                width: 85px;
+            .site-name {
+                font-size: 24px;
             }
-
 
             .nav-links {
-
-                width: 100%;
-
-                margin-top: 14px;
-
-                gap: 21px;
-
+                justify-content: flex-end;
+                gap: 18px;
                 flex-wrap: wrap;
             }
 
-
             .nav-links a {
-
-                font-size: 16px;
+                font-size: 17px;
             }
-
 
             .page {
-
-                padding: 38px 22px 65px 22px;
+                padding: 32px 20px 44px 20px;
             }
-
 
             h1 {
-
                 font-size: 42px;
-
-                margin-bottom: 40px;
+                margin-bottom: 34px;
             }
-
-
-            .section-title {
-
-                font-size: 28px;
-            }
-
 
             .institution-name {
-
-                font-size: 23px;
+                font-size: 27px;
             }
 
-
             .course-title {
+                font-size: 20px;
+            }
 
-                font-size: 19px;
+            .course-details {
+                font-size: 17px;
+            }
+
+            .footer {
+                font-size: 18px;
             }
 
         }
-
 
         @media (max-width: 450px) {
 
-            .nav-links {
+            h1 {
+                font-size: 36px;
+            }
 
+            .nav-links {
                 gap: 15px;
             }
 
-
-            h1 {
-
-                font-size: 38px;
-            }
-
         }
-
 
     </style>
 
 </head>
 
 
-
 <body>
-
-
-    <!-- =====================================================
-         TOP NAVIGATION
-    ====================================================== -->
 
     <header class="navbar">
 
+        <div class="navbar-inner">
 
-        <div class="brand">
-
-            <a href="index.html">
-
-                <img
-                    src="nd_logo.png"
-                    alt="University of Notre Dame logo"
-                >
-
+            <a class="site-name"
+               href="index.html">
+                Pietro Pellerito
             </a>
+
+            <nav class="nav-links"
+                 aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="research.html">
+                    Research
+                </a>
+
+                <a href="cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    CV
+                </a>
+
+                <a class="active"
+                   href="teaching.html">
+                    Teaching
+                </a>
+
+            </nav>
 
         </div>
-
-
-
-        <nav class="nav-links"
-             aria-label="Main navigation">
-
-
-            <a href="index.html">
-                Home
-            </a>
-
-
-            <a href="research.html">
-                Research
-            </a>
-
-
-            <a href="cv.pdf"
-               target="_blank"
-               rel="noopener noreferrer">
-                CV
-            </a>
-
-
-            <a class="active"
-               href="teaching.html">
-                Teaching
-            </a>
-
-
-        </nav>
 
     </header>
 
 
-
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
-
     <main class="page">
-
-
-        <!-- =================================================
-             PAGE TITLE
-        ================================================== -->
 
         <h1>
             Teaching
         </h1>
 
 
-
-        <!-- =================================================
-             TEACHING EXPERIENCE
-        ================================================== -->
-
         <section>
-
-
-
-            <!-- =============================================
-                 UNIVERSITY OF NOTRE DAME
-            ============================================== -->
 
             <div class="institution">
 
-
-                <h3 class="institution-name">
+                <h2 class="institution-name">
                     University of Notre Dame
-                </h3>
-
-
-
-                <!-- PRINCIPLES OF MICROECONOMICS -->
+                </h2>
 
                 <div class="course">
 
-
-                    <h4 class="course-title">
+                    <h3 class="course-title">
                         Principles of Microeconomics
-                    </h4>
-
+                    </h3>
 
                     <ul class="course-details">
 
@@ -464,20 +377,14 @@
 
                     </ul>
 
-
                 </div>
 
 
-
-                <!-- STATISTICS FOR ECONOMISTS -->
-
                 <div class="course">
 
-
-                    <h4 class="course-title">
+                    <h3 class="course-title">
                         Statistics for Economists
-                    </h4>
-
+                    </h3>
 
                     <ul class="course-details">
 
@@ -487,20 +394,14 @@
 
                     </ul>
 
-
                 </div>
 
 
-
-                <!-- PRINCIPLES OF MICROECONOMICS -->
-
                 <div class="course">
 
-
-                    <h4 class="course-title">
+                    <h3 class="course-title">
                         Principles of Microeconomics
-                    </h4>
-
+                    </h3>
 
                     <ul class="course-details">
 
@@ -510,36 +411,22 @@
 
                     </ul>
 
-
                 </div>
-
 
             </div>
 
 
-
-            <!-- =============================================
-                 KETTERING UNIVERSITY
-            ============================================== -->
-
             <div class="institution">
 
-
-                <h3 class="institution-name">
+                <h2 class="institution-name">
                     Kettering University
-                </h3>
-
-
-
-                <!-- PRINCIPLES OF MICROECONOMICS -->
+                </h2>
 
                 <div class="course">
 
-
-                    <h4 class="course-title">
+                    <h3 class="course-title">
                         Principles of Microeconomics
-                    </h4>
-
+                    </h3>
 
                     <ul class="course-details">
 
@@ -550,20 +437,14 @@
 
                     </ul>
 
-
                 </div>
 
 
-
-                <!-- CALCULUS II -->
-
                 <div class="course">
 
-
-                    <h4 class="course-title">
+                    <h3 class="course-title">
                         Calculus II
-                    </h4>
-
+                    </h3>
 
                     <ul class="course-details">
 
@@ -574,18 +455,18 @@
 
                     </ul>
 
-
                 </div>
 
-
             </div>
-
 
         </section>
 
 
-    </main>
+        <footer class="footer">
+            Pietro Pellerito | University of Notre Dame | ppelleri@nd.edu
+        </footer>
 
+    </main>
 
 </body>
 
