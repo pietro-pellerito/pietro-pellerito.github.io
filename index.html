@@ -407,23 +407,25 @@
 
             .navbar-inner {
                 min-height: 0;
-                padding: 15px 20px 17px 20px;
+                padding: 14px 12px;
                 align-items: center;
-                gap: 18px;
+                gap: 12px;
             }
 
             .site-name {
-                font-size: 24px;
+                font-size: 18px;
+                white-space: nowrap;
             }
 
             .nav-links {
                 justify-content: flex-end;
-                gap: 18px;
-                flex-wrap: wrap;
+                gap: 11px;
+                flex-wrap: nowrap;
             }
 
             .nav-links a {
-                font-size: 17px;
+                font-size: 14px;
+                white-space: nowrap;
             }
 
             .page {
@@ -433,30 +435,32 @@
             .profile {
                 display: flex;
                 flex-direction: column;
-                gap: 29px;
+                gap: 24px;
             }
 
+            .left-column,
             .right-column {
-                order: 1;
-                padding-top: 0;
-            }
-
-            .left-column {
-                order: 2;
-                width: 100%;
-            }
-
-            .headshot {
-                max-width: 430px;
+                display: contents;
             }
 
             h1 {
+                order: 1;
                 font-size: 42px;
-                margin-bottom: 24px;
+                margin-bottom: 0;
+            }
+
+            .headshot {
+                order: 2;
+                max-width: 430px;
             }
 
             .intro {
+                order: 3;
                 font-size: 17px;
+            }
+
+            .contact {
+                order: 4;
             }
 
             .section-divider {
@@ -489,12 +493,26 @@
 
         @media (max-width: 450px) {
 
-            h1 {
-                font-size: 36px;
+            .navbar-inner {
+                padding-left: 10px;
+                padding-right: 10px;
+                gap: 9px;
+            }
+
+            .site-name {
+                font-size: 16px;
             }
 
             .nav-links {
-                gap: 15px;
+                gap: 8px;
+            }
+
+            .nav-links a {
+                font-size: 13px;
+            }
+
+            h1 {
+                font-size: 36px;
             }
 
             .contact {
