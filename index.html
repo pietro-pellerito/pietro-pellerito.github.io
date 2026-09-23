@@ -126,7 +126,7 @@
             margin: 0 auto;
             padding: 12px 34px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             gap: 42px;
         }
@@ -140,7 +140,7 @@
         .nav-links a {
             color: #C99700;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 21px;
             font-weight: 500;
             transition: color 0.2s ease;
         }
@@ -157,7 +157,7 @@
         .site-name {
             color: #C99700;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 28px;
             font-weight: 600;
             white-space: nowrap;
         }
@@ -204,12 +204,22 @@
 
         .contact {
             padding: 18px 2px 0 2px;
-            font-size: 17px;
+            font-size: 16px;
             line-height: 1.55;
         }
 
+        .contact h2 {
+            margin: 0 0 9px 0;
+            padding: 0 0 7px 0;
+            border-bottom: 1px solid #b8b8b8;
+            color: #111111;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
         .contact-item {
-            margin-bottom: 12px;
+            margin-bottom: 0;
+            white-space: nowrap;
         }
 
         .contact a {
@@ -249,6 +259,12 @@
             margin-bottom: 0;
         }
 
+        .intro-cv {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 19px;
+        }
+
 
         /* =====================================================
            DIVIDER
@@ -257,7 +273,7 @@
         .section-divider {
             border: 0;
             border-top: 1px solid #c9c9c9;
-            margin: 48px 0 0 0;
+            margin: 48px 0 26px 0;
         }
 
 
@@ -302,7 +318,7 @@
             text-align: center;
             padding: 29px 20px 0 20px;
             color: #333333;
-            font-size: 15px;
+            font-size: 23px;
         }
 
 
@@ -352,24 +368,22 @@
             .navbar-inner {
                 min-height: 0;
                 padding: 15px 20px 17px 20px;
-                flex-direction: column-reverse;
-                align-items: flex-end;
-                gap: 10px;
+                align-items: center;
+                gap: 18px;
             }
 
             .site-name {
-                font-size: 19px;
+                font-size: 22px;
             }
 
             .nav-links {
-                width: 100%;
                 justify-content: flex-end;
-                gap: 20px;
+                gap: 18px;
                 flex-wrap: wrap;
             }
 
             .nav-links a {
-                font-size: 16px;
+                font-size: 17px;
             }
 
             .page {
@@ -407,6 +421,7 @@
 
             .section-divider {
                 margin-top: 38px;
+                margin-bottom: 22px;
             }
 
             .job-market-paper {
@@ -464,6 +479,11 @@
 
         <div class="navbar-inner">
 
+            <a class="site-name"
+               href="index.html">
+                Pietro Pellerito
+            </a>
+
             <nav class="nav-links"
                  aria-label="Main navigation">
 
@@ -487,11 +507,6 @@
                 </a>
 
             </nav>
-
-            <a class="site-name"
-               href="index.html">
-                Pietro Pellerito
-            </a>
 
         </div>
 
@@ -526,24 +541,16 @@
 
                 <div class="contact">
 
+                    <h2>
+                        Contact Info
+                    </h2>
+
                     <div class="contact-item">
                         <a href="mailto:ppelleri@nd.edu">
                             ppelleri@nd.edu
                         </a>
-                    </div>
-
-                    <div class="contact-item">
-                        3031 Jenkins Nanovic Hall
-                        <br>
-                        Notre Dame, IN 46556
-                    </div>
-
-                    <div class="contact-item">
-                        <a href="cv.pdf"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            CV
-                        </a>
+                        &nbsp;&bull;&nbsp;
+                        3031 Jenkins Nanovic Hall, Notre Dame, IN 46556
                     </div>
 
                 </div>
@@ -578,6 +585,13 @@
                     <p>
                         Write your institutional affiliations paragraph here.
                     </p>
+
+                    <a class="intro-cv"
+                       href="cv.pdf"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        CV
+                    </a>
 
                 </div>
 
