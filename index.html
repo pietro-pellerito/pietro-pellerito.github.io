@@ -43,7 +43,6 @@
             "name": "University of Notre Dame"
         },
         "email": "mailto:ppelleri@nd.edu",
-        "telephone": "+1-586-899-2969",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "3031 Jenkins Nanovic Hall",
@@ -87,18 +86,12 @@
         body {
             margin: 0;
             padding: 0;
-
             background-color: #ffffff;
-
             color: #111111;
-
             font-family: Arial, Helvetica, sans-serif;
-
             font-size: 18px;
-
             line-height: 1.55;
         }
-
 
         /* Notre Dame inspired colors
 
@@ -106,7 +99,6 @@
            Navy: #0C2340
            Blue: #1C4F7C
         */
-
 
         a {
             color: #006b91;
@@ -117,97 +109,62 @@
         }
 
 
-
         /* =====================================================
            TOP NAVIGATION BAR
         ====================================================== */
 
         .navbar {
-
             width: 100%;
+            background-color: #0C2340;
+            border-bottom: 1px solid #071729;
+        }
 
+        .navbar-inner {
+            width: 100%;
+            max-width: 1320px;
             min-height: 82px;
-
-            background-color: #000000;
-
+            margin: 0 auto;
+            padding: 12px 34px;
             display: flex;
-
-            justify-content: space-between;
-
+            justify-content: flex-end;
             align-items: center;
-
-            padding: 0 28px;
-
-            border-bottom: 1px solid #111111;
+            gap: 42px;
         }
-
-
-        /* -----------------------------------------------------
-           LOGO + NAME
-        ------------------------------------------------------ */
-
-        .brand {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 16px;
-        }
-
-
-        .brand img { 
-            
-            width: 235px;
-            
-            height: auto;
-            
-            object-fit: contain;
-            
-            display: block;
-        }
-
-        /* -----------------------------------------------------
-           NAVIGATION LINKS
-        ------------------------------------------------------ */
 
         .nav-links {
-
             display: flex;
-
             align-items: center;
-
             gap: 34px;
         }
 
-
         .nav-links a {
-
-            color: #ffffff;
-
+            color: #C99700;
             text-decoration: none;
-
             font-size: 18px;
-
-            font-weight: 400;
-
+            font-weight: 500;
             transition: color 0.2s ease;
         }
 
-
         .nav-links a:hover {
-
-            color: #C99700;
+            color: #ffffff;
         }
-
 
         .nav-links .active {
-
-            color: #ffffff;
-
-            font-weight: 500;
+            color: #C99700;
+            font-weight: 700;
         }
 
+        .site-name {
+            color: #C99700;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .site-name:hover {
+            color: #ffffff;
+        }
 
 
         /* =====================================================
@@ -215,215 +172,138 @@
         ====================================================== */
 
         .page {
-
             width: 100%;
-
             max-width: 1320px;
-
             margin: 0 auto;
-
-            display: grid;
-
-            grid-template-columns: 520px 1fr;
-
-            gap: 45px;
-
-            padding: 29px 34px 60px 34px;
+            padding: 44px 34px 58px 34px;
         }
-
 
 
         /* =====================================================
-           LEFT COLUMN
+           INTRO / PROFILE
         ====================================================== */
 
-        .left-column {
+        .profile {
+            display: grid;
+            grid-template-columns: 390px 1fr;
+            gap: 58px;
+            align-items: start;
+        }
 
+        .left-column {
             width: 100%;
         }
 
-
-        /* -----------------------------------------------------
-           HEADSHOT
-        ------------------------------------------------------ */
-
         .headshot {
-
             width: 100%;
-
-            max-width: 520px;
-
+            max-width: 390px;
             height: auto;
-
             display: block;
-
             object-fit: cover;
         }
 
-
-
-        /* -----------------------------------------------------
-           CONTACT INFORMATION
-        ------------------------------------------------------ */
-
         .contact {
-
-            padding: 14px 10px 0 10px;
-
-            font-size: 18px;
+            padding: 18px 2px 0 2px;
+            font-size: 17px;
+            line-height: 1.55;
         }
 
-
-        .contact h2 {
-
-            margin: 0 0 8px 0;
-
-            padding: 0;
-
-            color: #000000;
-
-            font-size: 20px;
-
-            font-weight: 700;
+        .contact-item {
+            margin-bottom: 12px;
         }
-
-
-        .contact p {
-
-            margin: 0 0 18px 0;
-
-            padding: 0;
-        }
-
 
         .contact a {
-
             color: #006b91;
-
             text-decoration: underline;
         }
 
-
         .contact a:hover {
-
             color: #C99700;
         }
 
-
-        .contact-item {
-
-            margin-bottom: 14px;
+        .right-column {
+            padding-top: 2px;
         }
 
+        h1 {
+            margin: 0 0 30px 0;
+            padding: 0;
+            color: #000000;
+            font-size: 58px;
+            font-weight: 700;
+            line-height: 1.08;
+        }
 
-        .cv-link {
-
-            display: inline-block;
-
-            margin-top: 2px;
-
+        .intro {
+            max-width: 790px;
+            color: #111111;
             font-size: 19px;
+            line-height: 1.62;
         }
 
-
-        .linkedin-link {
-
-            display: inline-block;
-
-            margin-top: 10px;
+        .intro p {
+            margin: 0 0 25px 0;
         }
 
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
 
 
         /* =====================================================
-           RIGHT COLUMN
+           DIVIDER
         ====================================================== */
 
-        .right-column {
-
-            padding: 8px 0 0 0;
+        .section-divider {
+            border: 0;
+            border-top: 1px solid #c9c9c9;
+            margin: 48px 0 0 0;
         }
 
 
+        /* =====================================================
+           JOB MARKET PAPER
+        ====================================================== */
 
-        /* -----------------------------------------------------
-           NAME
-        ------------------------------------------------------ */
+        .job-market-paper {
+            background-color: #f1f1f1;
+            padding: 38px 42px 42px 42px;
+        }
 
-        h1 {
+        .job-market-paper h2 {
+            margin: 0 0 22px 0;
+            color: #000000;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
 
+        .job-market-paper h3 {
             margin: 0 0 16px 0;
-
-            padding: 0;
-
-            color: #C99700;
-
-            font-size: 56px;
-
-            font-weight: 700;
-
-            line-height: 1.15;
-        }
-
-
-
-        /* -----------------------------------------------------
-           UNIVERSITY / DEPARTMENT
-        ------------------------------------------------------ */
-
-        .affiliation {
-
-            color: #1C4F7C;
-
-            font-size: 28px;
-
-            line-height: 1.45;
-
-            margin-bottom: 36px;
-        }
-
-
-
-        /* -----------------------------------------------------
-           ABOUT HEADING
-        ------------------------------------------------------ */
-
-        .about-heading {
-
-            color: #1C4F7C;
-
-            font-size: 27px;
-
-            font-weight: 700;
-
-            margin: 0 0 20px 0;
-        }
-
-
-
-        /* -----------------------------------------------------
-           BIOGRAPHY
-        ------------------------------------------------------ */
-
-        .bio {
-
-            max-width: 760px;
-
             color: #111111;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
 
-            font-size: 19px;
-
-            line-height: 1.6;
+        .job-market-paper p {
+            margin: 0;
+            max-width: 1060px;
+            font-size: 18px;
+            line-height: 1.65;
         }
 
 
-        .bio p {
+        /* =====================================================
+           FOOTER
+        ====================================================== */
 
-            margin-top: 0;
-
-            margin-bottom: 22px;
+        .footer {
+            text-align: center;
+            padding: 29px 20px 0 20px;
+            color: #333333;
+            font-size: 15px;
         }
-
 
 
         /* =====================================================
@@ -432,37 +312,35 @@
 
         @media (max-width: 950px) {
 
-            .page {
-
-                grid-template-columns: 42% 1fr;
-
-                gap: 35px;
-
+            .navbar-inner {
                 padding-left: 25px;
+                padding-right: 25px;
+                gap: 30px;
+            }
 
+            .nav-links {
+                gap: 24px;
+            }
+
+            .page {
+                padding-left: 25px;
                 padding-right: 25px;
             }
 
+            .profile {
+                grid-template-columns: 34% 1fr;
+                gap: 38px;
+            }
 
             h1 {
-
-                font-size: 47px;
+                font-size: 48px;
             }
 
-
-            .affiliation {
-
-                font-size: 25px;
-            }
-
-
-            .bio {
-
+            .intro {
                 font-size: 18px;
             }
 
         }
-
 
 
         /* =====================================================
@@ -471,118 +349,83 @@
 
         @media (max-width: 760px) {
 
-            .navbar {
-
-                flex-direction: column;
-
-                align-items: flex-start;
-
-                padding: 14px 20px 16px 20px;
+            .navbar-inner {
+                min-height: 0;
+                padding: 15px 20px 17px 20px;
+                flex-direction: column-reverse;
+                align-items: flex-end;
+                gap: 10px;
             }
 
-
-            .brand {
-
-                width: 100%;
+            .site-name {
+                font-size: 19px;
             }
-
-
-            .brand-name {
-
-                font-size: 21px;
-            }
-
-
-            .brand img {
-
-                width: 50px;
-
-                height: 50px;
-            }
-
 
             .nav-links {
-
                 width: 100%;
-
-                margin-top: 14px;
-
-                gap: 21px;
-
+                justify-content: flex-end;
+                gap: 20px;
                 flex-wrap: wrap;
             }
 
-
             .nav-links a {
-
                 font-size: 16px;
             }
 
-
             .page {
-
-                display: flex;
-
-                flex-direction: column;
-
-                padding: 28px 20px 50px 20px;
+                padding: 32px 20px 44px 20px;
             }
 
-
-            /*
-            On mobile the name/about section appears first,
-            followed by the photograph and contact information.
-            */
+            .profile {
+                display: flex;
+                flex-direction: column;
+                gap: 29px;
+            }
 
             .right-column {
-
                 order: 1;
-
                 padding-top: 0;
             }
 
-
             .left-column {
-
                 order: 2;
-
-                margin-top: 12px;
+                width: 100%;
             }
 
+            .headshot {
+                max-width: 430px;
+            }
 
             h1 {
-
-                font-size: 40px;
+                font-size: 42px;
+                margin-bottom: 24px;
             }
 
-
-            .affiliation {
-
-                font-size: 23px;
-
-                margin-bottom: 27px;
-            }
-
-
-            .about-heading {
-
-                font-size: 24px;
-            }
-
-
-            .bio {
-
+            .intro {
                 font-size: 17px;
             }
 
+            .section-divider {
+                margin-top: 38px;
+            }
 
-            .headshot {
+            .job-market-paper {
+                padding: 30px 24px 34px 24px;
+            }
 
-                max-width: 520px;
+            .job-market-paper h2 {
+                font-size: 27px;
+            }
+
+            .job-market-paper h3 {
+                font-size: 20px;
+            }
+
+            .job-market-paper p {
+                font-size: 17px;
             }
 
         }
-
 
 
         /* =====================================================
@@ -592,35 +435,22 @@
         @media (max-width: 450px) {
 
             h1 {
-
-                font-size: 35px;
+                font-size: 36px;
             }
-
-
-            .affiliation {
-
-                font-size: 21px;
-            }
-
 
             .nav-links {
-
                 gap: 15px;
             }
 
-
             .contact {
-
                 font-size: 16px;
             }
 
         }
 
-
     </style>
 
 </head>
-
 
 
 <body>
@@ -632,57 +462,40 @@
 
     <header class="navbar">
 
+        <div class="navbar-inner">
 
-        <!-- -------------------------------------------------
-             LEFT: NOTRE DAME LOGO + NAME
-        -------------------------------------------------- -->
+            <nav class="nav-links"
+                 aria-label="Main navigation">
 
-        <div class="brand">
+                <a class="active"
+                   href="index.html">
+                    Home
+                </a>
 
-            <img
-                src="nd_logo.png"
-                alt="University of Notre Dame logo"
-            >
+                <a href="research.html">
+                    Research
+                </a>
+
+                <a href="cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    CV
+                </a>
+
+                <a href="teaching.html">
+                    Teaching
+                </a>
+
+            </nav>
+
+            <a class="site-name"
+               href="index.html">
+                Pietro Pellerito
+            </a>
 
         </div>
 
-
-
-        <!-- -------------------------------------------------
-             RIGHT: NAVIGATION
-        -------------------------------------------------- -->
-
-        <nav class="nav-links"
-             aria-label="Main navigation">
-
-
-            <a class="active"
-               href="index.html">
-                Home
-            </a>
-
-
-            <a href="research.html">
-                Research
-            </a>
-
-
-            <a href="cv.pdf"
-               target="_blank"
-               rel="noopener noreferrer">
-                CV
-            </a>
-
-
-            <a href="teaching.html">
-                Teaching
-            </a>
-
-
-        </nav>
-
     </header>
-
 
 
     <!-- =====================================================
@@ -693,168 +506,124 @@
 
 
         <!-- =================================================
-             LEFT COLUMN
+             PROFILE / INTRODUCTION
         ================================================== -->
 
-        <section class="left-column">
+        <section class="profile">
 
 
             <!-- ---------------------------------------------
-                 HEADSHOT
+                 LEFT: HEADSHOT + CONTACT INFORMATION
             ---------------------------------------------- -->
 
-            <img
-                class="headshot"
-                src="headshot.jpg"
-                alt="Pietro Pellerito"
-            >
+            <div class="left-column">
 
+                <img
+                    class="headshot"
+                    src="headshot.jpg"
+                    alt="Pietro Pellerito"
+                >
+
+                <div class="contact">
+
+                    <div class="contact-item">
+                        <a href="mailto:ppelleri@nd.edu">
+                            ppelleri@nd.edu
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        3031 Jenkins Nanovic Hall
+                        <br>
+                        Notre Dame, IN 46556
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="cv.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            CV
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
 
 
             <!-- ---------------------------------------------
-                 CONTACT INFORMATION
+                 RIGHT: NAME + THREE INTRODUCTORY BLOCKS
             ---------------------------------------------- -->
 
-            <div class="contact">
+            <div class="right-column">
 
+                <h1>
+                    Pietro Pellerito
+                </h1>
 
-                <h2>
-                    Contact
-                </h2>
+                <div class="intro">
 
+                    <!-- BLOCK 1: PhD candidate + research interests -->
+                    <p>
+                        Write your Ph.D. candidate and research interests paragraph here.
+                    </p>
 
-                <div class="contact-item">
+                    <!-- BLOCK 2: Job market status + JMP description -->
+                    <p>
+                        <strong>I am on the 2026–2027 job market.</strong>
+                        Write a short description of your job market paper here.
+                    </p>
 
-                    <a href="tel:+15868992969">
-                        (586) 899-2969
-                    </a>
-
-                    <br>
-
-                    <a href="mailto:ppelleri@nd.edu">
-                        ppelleri@nd.edu
-                    </a>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    3031 Jenkins Nanovic Hall
-
-                    <br>
-
-                    Notre Dame, IN 46556
+                    <!-- BLOCK 3: Institutional affiliations -->
+                    <p>
+                        Write your institutional affiliations paragraph here.
+                    </p>
 
                 </div>
-
-
-                <div class="contact-item">
-
-                    <a class="cv-link"
-                       href="cv.pdf"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        CV
-                    </a>
-
-                    <br>
-
-                    <a class="linkedin-link"
-                       href="https://www.linkedin.com/in/pietro-pellerito-6b41401b5/"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        LinkedIn
-                    </a>
-
-                </div>
-
 
             </div>
 
         </section>
-
 
 
         <!-- =================================================
-             RIGHT COLUMN
+             DIVIDER
         ================================================== -->
 
-        <section class="right-column">
+        <hr class="section-divider">
 
 
-            <!-- ---------------------------------------------
-                 NAME
-            ---------------------------------------------- -->
+        <!-- =================================================
+             JOB MARKET PAPER
+        ================================================== -->
 
-            <h1>
-                Pietro Pellerito
-            </h1>
+        <section class="job-market-paper">
 
-
-
-            <!-- ---------------------------------------------
-                 AFFILIATION
-            ---------------------------------------------- -->
-
-            <div class="affiliation">
-
-                University of Notre Dame
-
-                <br>
-
-                Department of Economics
-
-            </div>
-
-
-
-            <!-- ---------------------------------------------
-                 ABOUT
-            ---------------------------------------------- -->
-
-            <h2 class="about-heading">
-                About
+            <h2>
+                Job Market Paper
             </h2>
 
+            <h3>
+                Write your job market paper title here
+            </h3>
 
-            <div class="bio">
-
-
-                <p>
-                    Pietro Pellerito is an Economics Ph.D. candidate at the University of 
-                    Notre Dame on the 2026–27 job market, with research interests in public economics, 
-                    labor economics, and the economics of education. His job market paper uses a continuous 
-                    difference-in-differences design to study how school districts respond to inter-district 
-                    school choice, finding that districts facing greater enrollment pressure increase academic 
-                    quality. His other research examines whether light-touch interventions increase high school 
-                    completion among adult learners and how firms adjust employment and wages in response to dual 
-                    minimum-wage policies. Pietro is a fellow in Notre Dame’s Program for Interdisciplinary 
-                    Educational Research and a recipient of the Graduate Student Research Award.
-
-
-                <!-- =================================================
-                     OPTIONAL SECOND BIO PARAGRAPH
-
-                     If you want to add another paragraph later,
-                     remove the opening and closing comment markers
-                     around the <p> section below.
-
-                <p>
-                    Write your second biography paragraph here.
-                </p>
-
-                ================================================== -->
-
-
-            </div>
-
+            <p>
+                Write your job market paper description or abstract here.
+            </p>
 
         </section>
 
 
-    </main>
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
 
+        <footer class="footer">
+            Pietro Pellerito | University of Notre Dame | ppelleri@nd.edu
+        </footer>
+
+
+    </main>
 
 </body>
 
