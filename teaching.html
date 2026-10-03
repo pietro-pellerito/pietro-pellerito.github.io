@@ -121,7 +121,7 @@
         }
 
         h1 {
-            margin: 0 0 42px 0;
+            margin: 0 0 30px 0;
             padding: 0;
             color: #000000;
             font-size: 60px;
@@ -134,61 +134,146 @@
            TEACHING
         ====================================================== */
 
-        .institution {
-            margin-bottom: 48px;
-        }
-
-        .institution + .institution {
-            padding-top: 42px;
-            border-top: 1px solid #c9c9c9;
-        }
-
-        .institution-name {
-            color: #0C2340;
-            font-size: 31px;
-            font-weight: 700;
-            margin: 0 0 24px 0;
-            line-height: 1.25;
-        }
-
-        .course {
-            margin-bottom: 30px;
-        }
-
-        .course:last-child {
-            margin-bottom: 0;
-        }
-
-        .course-title {
-            color: #111111;
-            font-size: 23px;
-            font-weight: 700;
-            margin: 0 0 8px 0;
-            line-height: 1.35;
-        }
-
-        .course-details {
-            margin: 0;
-            padding-left: 24px;
-            list-style-type: square;
+        .teaching-statement {
+            margin: 0 0 50px 0;
             font-size: 19px;
-            line-height: 1.6;
+            line-height: 1.55;
         }
 
-        .course-details li {
-            margin-bottom: 6px;
-            padding-left: 3px;
-        }
-
-        .course-details a {
+        .teaching-statement a {
             color: #006b91;
             text-decoration: underline;
             text-underline-offset: 2px;
             font-weight: 600;
         }
 
-        .course-details a:hover {
+        .teaching-statement a:hover {
             color: #C99700;
+        }
+
+        .teaching-section-title {
+            color: #0C2340;
+            font-size: 34px;
+            font-weight: 700;
+            margin: 0 0 28px 0;
+            line-height: 1.25;
+        }
+
+        .institution {
+            margin: 0 0 22px 14px;
+        }
+
+        .institution + .institution {
+            margin-top: 0;
+        }
+
+        .institution-name {
+            color: #0C2340;
+            font-size: 23px;
+            font-weight: 600;
+            margin: 0 0 14px 0;
+            line-height: 1.3;
+        }
+
+        .course {
+            margin: 0 0 0 24px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .course:first-of-type {
+            border-top: 1px solid #dddddd;
+        }
+
+        .course:last-of-type {
+            border-bottom: none;
+        }
+
+        .course summary {
+            position: relative;
+            list-style: none;
+            cursor: pointer;
+            padding: 15px 42px 15px 0;
+            color: #111111;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 1.35;
+        }
+
+        .course summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .course summary::after {
+            content: "▾";
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            color: #0C2340;
+            font-size: 18px;
+            transition: transform 0.18s ease;
+        }
+
+        .course[open] summary::after {
+            transform: translateY(-50%) rotate(0deg);
+        }
+
+        .course summary:hover {
+            color: #006b91;
+        }
+
+        .course-content {
+            padding: 0 42px 17px 28px;
+        }
+
+        .course-line {
+            margin: 0 0 6px 0;
+            font-size: 19px;
+            line-height: 1.55;
+        }
+
+        .course-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .course-subline {
+            margin: -8px 0 6px 28px;
+        }
+
+        .course-role-gap {
+            margin-top: 27px;
+        }
+
+        .course-line a {
+            color: #006b91;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-weight: 600;
+        }
+
+        .course-line a:hover {
+            color: #C99700;
+        }
+
+        .resource-divider {
+            padding: 0;
+            color: #000000;
+        }
+
+        .selected-reviews {
+            margin-top: 58px;
+        }
+
+        .student-reviews {
+            margin: 0;
+            padding-left: 28px;
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .student-reviews li {
+            margin-bottom: 8px;
         }
 
 
@@ -260,18 +345,33 @@
 
             h1 {
                 font-size: 42px;
-                margin-bottom: 34px;
+                margin-bottom: 24px;
+            }
+
+            .teaching-statement {
+                font-size: 17px;
+                margin-bottom: 38px;
+            }
+
+            .teaching-section-title {
+                font-size: 29px;
+                margin-bottom: 24px;
+            }
+
+            .institution {
+                margin-left: 10px;
+                margin-bottom: 26px;
             }
 
             .institution-name {
-                font-size: 27px;
+                font-size: 21px;
             }
 
-            .course-title {
-                font-size: 20px;
+            .course summary {
+                font-size: 18px;
             }
 
-            .course-details {
+            .course-line {
                 font-size: 17px;
             }
 
@@ -344,119 +444,138 @@
             Teaching
         </h1>
 
+        <p class="teaching-statement">
+            Please see my
+            <a href="teaching_statement.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+                teaching statement
+            </a>
+            for more on my pedagogical approach.
+        </p>
+
 
         <section>
 
+            <h2 class="teaching-section-title">
+                Courses Taught
+            </h2>
+
             <div class="institution">
 
-                <h2 class="institution-name">
+                <h3 class="institution-name">
                     University of Notre Dame
-                </h2>
+                </h3>
 
-                <div class="course">
+                <details class="course">
 
-                    <h3 class="course-title">
+                    <summary>
                         Principles of Microeconomics
-                    </h3>
+                    </summary>
 
-                    <ul class="course-details">
+                    <div class="course-content">
 
-                        <li>
-                            Principal Instructor, Summer 2024 
-                            (  <a href="microeconomics_syllabus.pdf"
+                        <p class="course-line">
+                            Principal Instructor &bull; Summer 2024 <span class="resource-divider" aria-hidden="true">&bull;</span> <a href="microeconomics_syllabus.pdf" target="_blank" rel="noopener noreferrer">Syllabus</a>
+                        </p>
+
+                        <p class="course-line course-subline">
+                            <a href="microeconomics_course_evaluations.pdf"
                                target="_blank"
                                rel="noopener noreferrer">
-                                Syllabus 
-                                </a>
-                                )
-                        </li>
+                                Course Evaluations
+                            </a> (4.1/5)
+                        </p>
 
-                        <li>
+                        <p class="course-line course-role-gap">
+                            Teaching Assistant &bull; Fall 2022
+                        </p>
 
-                        </li>
+                    </div>
 
-                    </ul>
-
-                </div>
+                </details>
 
 
-                <div class="course">
+                <details class="course">
 
-                    <h3 class="course-title">
+                    <summary>
                         Statistics for Economists
-                    </h3>
+                    </summary>
 
-                    <ul class="course-details">
+                    <div class="course-content">
 
-                        <li>
-                            Recitation Instructor, Spring 2023
-                        </li>
+                        <p class="course-line">
+                            Recitation Instructor &bull; Spring 2023
+                        </p>
 
-                    </ul>
+                        <p class="course-line course-subline">
+                            <a href="statistics_course_evaluations.pdf"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Course Evaluations
+                            </a> (4.9/5)
+                        </p>
 
-                </div>
+                    </div>
 
-
-                <div class="course">
-
-                    <h3 class="course-title">
-                        Principles of Microeconomics
-                    </h3>
-
-                    <ul class="course-details">
-
-                        <li>
-                            Teaching Assistant, Fall 2022
-                        </li>
-
-                    </ul>
-
-                </div>
+                </details>
 
             </div>
 
 
             <div class="institution">
 
-                <h2 class="institution-name">
+                <h3 class="institution-name">
                     Kettering University
+                </h3>
+
+                <details class="course">
+
+                    <summary>
+                        Principles of Microeconomics
+                    </summary>
+
+                    <div class="course-content">
+
+                        <p class="course-line">
+                            Supplemental Instructor &bull; Spring 2019 &amp; Fall 2019
+                        </p>
+
+                    </div>
+
+                </details>
+
+
+                <details class="course">
+
+                    <summary>
+                        Calculus II
+                    </summary>
+
+                    <div class="course-content">
+
+                        <p class="course-line">
+                            Supplemental Instructor &bull; Fall 2018
+                        </p>
+
+                    </div>
+
+                </details>
+
+            </div>
+
+            <div class="selected-reviews">
+                <h2 class="teaching-section-title">
+                    Selected Student Reviews
                 </h2>
 
-                <div class="course">
-
-                    <h3 class="course-title">
-                        Principles of Microeconomics
-                    </h3>
-
-                    <ul class="course-details">
-
-                        <li>
-                            Supplemental Instruction Leader,
-                            Spring 2019–Fall 2019
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="course">
-
-                    <h3 class="course-title">
-                        Calculus II
-                    </h3>
-
-                    <ul class="course-details">
-
-                        <li>
-                            Supplemental Instruction Leader,
-                            Fall 2018
-                        </li>
-
-                    </ul>
-
-                </div>
-
+                <ul class="student-reviews">
+                    <li>“Pietro's tutorials are always <strong>very engaging</strong>. I asked many questions to clarify course materials throughout the course and <strong>he would always make sure to answer all of my questions thoroughly</strong>. Overall, great instructor!”</li>
+                    <li>“His <strong>genuine passion</strong> for the subject and his willingness to go above and beyond helped increase his students’ overall interest in and understanding of the subject.”</li>
+                    <li>“<strong>Cares a lot about his students</strong>. Great Professor.”</li>
+                    <li>“Pietro <strong>always wanted to help us</strong>, answered all of our questions, and <strong>made sure we knew what we were doing</strong> before we walked out of the door.”</li>
+                    <li>“Pietro's greatest strength is his ability to <strong>answer and explain any question we ask</strong> so that we understand it.”</li>
+                </ul>
             </div>
 
         </section>
